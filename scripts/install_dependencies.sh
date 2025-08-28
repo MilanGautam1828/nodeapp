@@ -1,4 +1,6 @@
 #!/bin/bash
+
+sleep 20
 set -e
 
 # Fail if directory doesn’t exist
