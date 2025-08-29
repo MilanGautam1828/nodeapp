@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     AWS_REGION       = "us-east-1"
-    S3_BUCKET        = "nodeapp-deployments-pro"
+    S3_BUCKET        = "node-deployments-pro"
     APP_NAME         = "nodeapp-codedeploy"
     DEPLOYMENT_GROUP = "nodeapp-dg"
   }
