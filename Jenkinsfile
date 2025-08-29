@@ -32,10 +32,10 @@ pipeline {
           ls -lh "$ART"
         '''
       }
-      post { 
-        always { 
-          archiveArtifacts artifacts: "nodeapp-${BUILD_ID}.zip", fingerprint: true 
-        } 
+      post {
+        always {
+          archiveArtifacts artifacts: "nodeapp-${BUILD_ID}.zip", fingerprint: true
+        }
       }
     }
 
@@ -67,5 +67,8 @@ pipeline {
   }
 
   post {
-    success { echo "
+    success { echo "Pipeline succeeded" }
+    failure { echo "Pipeline failed" }
+  }
+}
 
